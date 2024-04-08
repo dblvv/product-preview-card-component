@@ -4,25 +4,21 @@
 }
 
 :root {
-    --Nutmeg: hsl(14, 45%, 36%);
-    --Dark-Raspberry: hsl(332, 51%, 32%);
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
 
-
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
     --White: hsl(0, 0%, 100%);
-    --Rose-White: hsl(330, 100%, 98%);
-    --Eggshell: hsl(30, 54%, 90%);
-    --Light-Grey: hsl(30, 18%, 87%);
-    --Wenge-Brown: hsl(30, 10%, 34%);
-    --Dark-Charcoal: hsl(24, 5%, 18%);
 }
 
 body {
-    background-color: var(--Eggshell);
+    background-color: var(--Cream);
 
-    font-family: 'Outfit';
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--Wenge-Brown);
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--Very-dark-blue);
 
     display: flex;
     flex-direction: column;
@@ -32,13 +28,52 @@ body {
 
 main {
     background-color: var(--White);
-    margin: 70px 0px 0px;
+    margin: 30px 20px;
     max-width: 650px;
-    padding: 30px;
+    /* padding: 30px; */
 
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
     /* align-items: center; */
 
     border-radius: 1rem;
+}
+
+@media (max-width: 375px) {
+
+}
+
+img {
+    width: auto;
+}
+
+div {
+    padding: 20px;
+    width: auto;
+}
+
+h1 {
+    font-family: 'Frances';
+    font-weight: 700;
+
+}
+
+h2 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 500;
+}
+
+button {
+    background-color: var(--Dark-cyan);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
