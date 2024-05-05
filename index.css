@@ -18,7 +18,7 @@ body {
     font-family: 'Montserrat';
     font-size: 14px;
     font-weight: 500;
-    color: var(--Very-dark-blue);
+    color: var(--Dark-grayish-blue);
 
     display: flex;
     flex-direction: column;
@@ -34,31 +34,44 @@ main {
 
     /* display: flex; */
     /* align-items: center; */
-
+    /* flex-direction: row; */
+    /**/
     border-radius: 1rem;
 }
 
-@media (max-width: 375px) {
-
-}
+@media (max-width: 375px) {}
 
 img {
     width: auto;
 }
 
-div {
-    padding: 20px;
+.hero {
     width: auto;
+    margin: 30px 20px;
+    max-width: 650px;
+    padding: 30px;
+    height: auto;
+
+    /* display: flex; */
+    /* align-items: center; */
 }
 
 h1 {
+    color: var(--Very-dark-blue);
     font-family: 'Frances';
     font-weight: 700;
+    font-size: 2rem;
+}
 
+.price>h1 {
+    color: var(--Dark-cyan);
 }
 
 h2 {
     font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 3rem;
+    text-transform: uppercase;
 }
 
 p {
@@ -67,6 +80,12 @@ p {
 
 button {
     background-color: var(--Dark-cyan);
+    color: var(--Cream);
+}
+
+button:hover,
+button:focus {
+    background-color: var(--Very-dark-blue);
 }
 
 .attribution {
@@ -76,4 +95,9 @@ button {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+footer {
+    margin: 20px 0px;
+    /* color: var(--Very-dark-blue); */
 }
