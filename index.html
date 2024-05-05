@@ -21,7 +21,10 @@
 <body>
 
     <main>
-        <img src="images/image-product-desktop.jpg" alt="image of product">
+        <picture>
+            <source srcset="images/image-product-mobile.jpg" media="(max-width: 680px)">
+            <img src="images/image-product-desktop.jpg" alt="image of product">
+        </picture>
         <div class="container">
             <div class="hero">
                 <h2>Perfume</h2>
@@ -38,7 +41,9 @@
                     <p><strike>$169.99</strike></p>
                 </div>
 
-                <button><img src="images/icon-cart.svg" alt="shopping cart icon"><h3>Add to Cart</h3></button>
+                <button><img src="images/icon-cart.svg" alt="shopping cart icon">
+                    <p>Add to Cart</p>
+                </button>
             </div>
         </div>
     </main>
